@@ -1,0 +1,54 @@
+.container {
+  display: grid;
+  grid-template-areas: "h h h h" "m m m m" "f f f f";
+  grid-gap: 5px;
+}
+
+.header {
+  grid-area: h;
+  text-align: center;
+  background: plum;
+}
+
+.main {
+  grid-area: m;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+  grid-area: f;
+  text-align: center;
+  background: plum;
+}
+
+@media only screen and (max-width: 480px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+@keyframes example {
+  from {
+    background-color: goldenrod;
+  }
+  to {
+    background-color: yellowgreen;
+  }
+}
+.component-card {
+  background: aquamarine;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-auto-rows: 50px;
+  text-align: center;
+}
+.component-card-content {
+  background: blanchedalmond;
+}
+.component-card-img {
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+/*# sourceMappingURL=public/style.css.map */
